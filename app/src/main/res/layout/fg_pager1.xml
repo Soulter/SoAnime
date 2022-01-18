@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:visibility="gone"
+        android:id="@+id/result_warning"
+        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#E48181"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardElevation="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="该结果几乎不可靠"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:paddingTop="8dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:visibility="invisible"
+            android:id="@+id/title_filed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="22dp"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/teal_700"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/anime_title"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingTop="8dp"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:visibility="invisible"
+            android:id="@+id/details_filed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            app:cardBackgroundColor="@color/teal_700"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/anime_details"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:paddingTop="8dp"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/video_filed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            app:cardBackgroundColor="@color/teal_700"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="12dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="与结果对应图片 请核实 "
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingTop="8dp"
+                    />
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/image_result_progbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp">
+                </ProgressBar>
+
+                <ImageView
+                    android:id="@+id/image_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp"
+                    >
+                </ImageView>
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t1"
+                android:textSize="12dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击加号选择动漫截图，马上就可以搜出出处啦( ﾟ∀。)">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/t2"
+                android:textSize="12dp"
+                android:layout_below="@id/t1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create by Soulter | QQUID:Soulter618 | trace.moe 提供API">
+
+            </TextView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>
